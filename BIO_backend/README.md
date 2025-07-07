@@ -26,7 +26,7 @@ cp env.template .env
 
 ### Run with Docker (recommended)
 
-#### Продакшн режим
+#### Production mode
 ```bash
 # Start all services (API + PostgreSQL + pgAdmin)
 docker-compose up -d
@@ -175,6 +175,7 @@ API endpoints:
 - **Class Validator** - data validation
 
 <div align="center">
+
 [<img title="nestjs" alt="nestjs" height=48 src="https://raw.githubusercontent.com/Barklim/course/main/hostImg/onlyfIcons/nestjs.svg"/>](https://nestjs.com/)
 [<img title="typescript" alt="typescript" height=48 src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png"/>](https://www.typescriptlang.org/)
 [<img title="postgres" alt="postgres" height=48 src="https://raw.githubusercontent.com/Barklim/course/main/hostImg/onlyfIcons/pg.svg"/>](https://www.postgresql.org/)
