@@ -2,5 +2,5 @@
 
 - ✅ Init project
 - ⌛ Swagger descriptions
-- Postman export
 - Refresh token, 2fa
+- `/assets` - screens, apk, Postman export
