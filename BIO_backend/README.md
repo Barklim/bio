@@ -1,0 +1,185 @@
+# BIO Backend API
+
+Rest API backend on NestJS with TypeScript, PostgreSQL and Docker configuration.
+
+## Requirements
+
+- Node.js 18+
+- Docker и Docker Compose
+- PostgreSQL (if running locally)
+
+## Installation and launch
+
+### Cloning and installing dependencies
+
+```bash
+npm install
+```
+
+### Setting environment variables
+
+Copy the `env.template` file to `.env` and set up the variables:
+
+```bash
+cp env.template .env
+```
+
+### Run with Docker (recommended)
+
+#### Продакшн режим
+```bash
+# Start all services (API + PostgreSQL + pgAdmin)
+docker-compose up -d
+
+# Просмотр логов
+docker-compose logs -f
+```
+
+#### Development mode
+```bash
+# Run in development mode with hot reload
+docker-compose -f docker-compose.dev.yml up -d
+
+# View logs
+docker-compose -f docker-compose.dev.yml logs -f api
+```
+
+### Local Run (without Docker)
+
+```bash
+# Make sure PostgreSQL is running locally
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run start:dev
+
+# Run in production mode
+npm run build
+npm run start:prod
+```
+
+## API Documentation
+
+Once the application is running, the Swagger documentation will be available at:
+- **Local**: http://localhost:3000/api/docs
+- **Docker**: http://localhost:3000/api/docs
+
+## Available commands
+
+```bash
+# Development
+npm run start:dev          # Startup with hot reboot
+npm run start:debug        # Run with debugger
+
+# Production
+npm run build              # Build project
+npm run start:prod         # Run production version
+
+# Testing
+npm run test               # Unit tests
+npm run test:e2e           # E2E tests
+npm run test:cov           # Tests with coverage
+
+# Linting and formatting
+npm run lint               # Code check
+npm run format             # Code formatting
+```
+
+## 📁 Project structure
+
+```
+src/
+├── app.module.ts           # Root module
+├── main.ts                 # Entry point to the application
+├── app.controller.ts       # Main controller
+├── app.service.ts          # Main service
+├── database/               # Database configuration
+│   └── database.module.ts
+└── users/                  # User module
+    ├── users.module.ts
+    ├── users.controller.ts
+    ├── users.service.ts
+    ├── entities/
+    │   └── user.entity.ts
+    └── dto/
+        ├── create-user.dto.ts
+        └── update-user.dto.ts
+```
+
+## Environment variables
+
+| Variable | Description | Default |
+|------------|-----------|--------------|
+| `NODE_ENV` | Environment mode | `development` |
+| `PORT` | Application port | `3000` |
+| `DB_HOST` | PostgreSQL host | `localhost` |
+| `DB_PORT` | PostgreSQL port | `5432` |
+| `DB_USERNAME` | DB user | `postgres` |
+| `DB_PASSWORD` | DB password | `postgres` |
+| `DB_NAME` | Database name | `bio_db` |
+| `CORS_ORIGIN` | CORS settings | `*` |
+
+## API Request Examples
+
+### Create a user
+```bash
+curl -X POST http://localhost:3000/users \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "user@example.com",
+    "firstName": "John",
+    "lastName": "Doe"
+  }'
+```
+
+### Get all users
+```bash
+curl http://localhost:3000/users
+```
+
+### Getting user by ID
+```bash
+curl http://localhost:3000/users/1
+```
+
+API endpoints:
+- `GET /` - Health check
+- `GET /version` - Application version
+- `GET /users` - List of users
+- `POST /users` - Create user
+- `GET /users/:id` - Get user
+- `PATCH /users/:id` - Update user
+- `DELETE /users/:id` - Delete user
+
+## Troubleshooting
+
+### Problems connecting to the database
+1. Make sure PostgreSQL is running
+2. Check environment variables in `.env`
+3. Check port 5432 is available
+
+### Docker issues
+1. Make sure Docker is running
+2. Check free ports (3000, 5432, 5050)
+3. Clear Docker cache: `docker system prune`
+
+## Technologies
+
+- **NestJS** - progressive Node.js framework
+- **TypeScript** - typed JavaScript
+- **PostgreSQL** - relational database
+- **TypeORM** - ORM for TypeScript
+- **Swagger** - automatic API documentation
+- **Docker** - application containerization
+- **Class Validator** - data validation
+
+<div align="center">
+[<img title="nestjs" alt="nestjs" height=48 src="https://raw.githubusercontent.com/Barklim/course/main/hostImg/onlyfIcons/nestjs.svg"/>](https://nestjs.com/)
+[<img title="typescript" alt="typescript" height=48 src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png"/>](https://www.typescriptlang.org/)
+[<img title="postgres" alt="postgres" height=48 src="https://raw.githubusercontent.com/Barklim/course/main/hostImg/onlyfIcons/pg.svg"/>](https://www.postgresql.org/)
+[<img title="typeorm" alt="typeorm" height=48 src="https://avatars.githubusercontent.com/u/20165699?s=48&v=4"/>](https://github.com/typeorm/typeorm)
+[<img title="swagger" alt="swagger" height=48 src="https://avatars.githubusercontent.com/u/7658037?s=200&v=4"/>](https://github.com/swagger-api)
+[<img title="docker" alt="docker" height=48 src="https://avatars.githubusercontent.com/u/7739233?s=48&v=4"/>](https://www.docker.com/)
+[<img title="class validator" alt="class validator" height=48 src="https://avatars.githubusercontent.com/u/24602613?s=48&v=4"/>](https://www.docker.com/)
+</div>
