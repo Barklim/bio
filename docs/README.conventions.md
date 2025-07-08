@@ -1,6 +1,6 @@
 # Commits
 
-- Commit conventions [link](https://www.conventionalcommits.org/en/v1.0.0/)
+Commit conventions [link](https://www.conventionalcommits.org/en/v1.0.0/)
 
 ### Branch naming
 

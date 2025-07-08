@@ -11,14 +11,26 @@ Simple MVP based on [Nest](https://nestjs.com/) and [React Native + Expo](https:
 - [Commit conventions](https://github.com/Barklim/bio/blob/main/docs/README.conventions.md)
 - [Docker commands](https://github.com/Barklim/bio/blob/main/docs/README.docker.md)
 - [Backend tests](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/Readme.TESTING.md)
-- [Backend management](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/DATABASE_MANAGMENT_IN_SHORT.md.md)
+- [Backend db management](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/DATABASE_MANAGMENT_IN_SHORT.md.md)
 
-### Features
+### Quick start
 
-- Swagger docs
-- Configured `docker compose`, `Dockerfile` which picks up environment variables and supports hot reload
+```bash
+git clone https://github.com/Barklim/bio/tree/main
+
+cd BIO_backend
+
+cp env.template .env
+
+docker compose -f docker-compose.dev.yml up -d
+
+npm run db:setup
+```
+
+### Api
+
 - Postman [collection](https://github.com/Barklim/bio/blob/main/assets/_Biocad.postman_collection.json)
-- Auth - guards, strong password, omit field password Hash
+- [Readme.api.md](https://github.com/Barklim/bio/blob/main/docs/Readme.api.md)
 
 ## React Native stack
 
