@@ -6,6 +6,9 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  // Set global API prefix for versioning
+  app.setGlobalPrefix('api/v1');
+
   // Enable global validation pipes
   app.useGlobalPipes(
     new ValidationPipe({
@@ -37,6 +40,7 @@ async function bootstrap() {
   await app.listen(port);
   
   console.log(`Application is running on: http://localhost:${port}`);
+  console.log(`API endpoints available at: http://localhost:${port}/api/v1`);
   console.log(`Swagger documentation: http://localhost:${port}/api/docs`);
 }
 

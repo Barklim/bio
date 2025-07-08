@@ -65,6 +65,8 @@ Once the application is running, the Swagger documentation will be available at:
 - **Local**: http://localhost:3000/api/docs
 - **Docker**: http://localhost:3000/api/docs
 
+All API endpoints are prefixed with `/api/v1` for versioning (following REST API best practices).
+
 ## Available commands
 
 ```bash
@@ -124,7 +126,7 @@ src/
 
 ### Create a user
 ```bash
-curl -X POST http://localhost:3000/users \
+curl -X POST http://localhost:3000/api/v1/users \
   -H "Content-Type: application/json" \
   -d '{
     "email": "user@example.com",
@@ -135,22 +137,22 @@ curl -X POST http://localhost:3000/users \
 
 ### Get all users
 ```bash
-curl http://localhost:3000/users
+curl http://localhost:3000/api/v1/users
 ```
 
 ### Getting user by ID
 ```bash
-curl http://localhost:3000/users/1
+curl http://localhost:3000/api/v1/users/1
 ```
 
 API endpoints:
-- `GET /` - Health check
-- `GET /version` - Application version
-- `GET /users` - List of users
-- `POST /users` - Create user
-- `GET /users/:id` - Get user
-- `PATCH /users/:id` - Update user
-- `DELETE /users/:id` - Delete user
+- `GET /api/v1` - Health check
+- `GET /api/v1/version` - Application version
+- `GET /api/v1/users` - List of users
+- `POST /api/v1/users` - Create user
+- `GET /api/v1/users/:id` - Get user
+- `PATCH /api/v1/users/:id` - Update user
+- `DELETE /api/v1/users/:id` - Delete user
 
 ## Troubleshooting
 
