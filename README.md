@@ -9,9 +9,9 @@ Simple MVP based on [Nest](https://nestjs.com/) and [React Native + Expo](https:
 
 - [TODO](https://github.com/Barklim/bio/blob/main/docs/Readme.TODO.md)
 - [Commit conventions](https://github.com/Barklim/bio/blob/main/docs/README.conventions.md)
-- [Backend Tests](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/Readme.TESTING.md)
-- [Postgres management](https://github.com/Barklim/bio/blob/main/docs/README.pg.md)
 - [Docker commands](https://github.com/Barklim/bio/blob/main/docs/README.docker.md)
+- [Backend tests](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/Readme.TESTING.md)
+- [Backend management](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/DATABASE_MANAGMENT_IN_SHORT.md.md)
 
 ### Features
 

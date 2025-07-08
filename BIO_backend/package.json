@@ -26,8 +26,15 @@
     "test:all:cov": "npm run test:cov && npm run test:e2e:cov",
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:generate": "npm run typeorm -- migration:generate -d src/database/data-source.ts",
+    "migration:create": "npm run typeorm -- migration:create",
     "migration:run": "npm run typeorm -- migration:run -d src/database/data-source.ts",
-    "migration:revert": "npm run typeorm -- migration:revert -d src/database/data-source.ts"
+    "migration:revert": "npm run typeorm -- migration:revert -d src/database/data-source.ts",
+    "migration:show": "npm run typeorm -- migration:show -d src/database/data-source.ts",
+    "schema:drop": "npm run typeorm -- schema:drop -d src/database/data-source.ts",
+    "schema:sync": "npm run typeorm -- schema:sync -d src/database/data-source.ts",
+    "seed:run": "ts-node src/database/seeds/index.ts",
+    "db:setup": "npm run migration:run && npm run seed:run",
+    "db:reset": "npm run schema:drop && npm run migration:run && npm run seed:run"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
