@@ -2,9 +2,17 @@
 
 This document describes a comprehensive testing framework for the BIO Backend API on NestJS.
 
-| npm run test:unit | npm run test:all:cov | npm run test:e2e |
-| ------------- | ----------------- | ----------------- |
-|![terminal.test.unit](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/terminal.test.unit.png)|![terminal.test.all.cov](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/terminal.test.all.cov.png)|![terminal.test.e2e](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/terminal.test.e2e.png)|
+| npm run test:all:cov |
+| ----------------- |
+|![terminal.test.all.cov](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/terminal.test.all.cov.png)|
+
+| npm run test:unit |
+| ------------- |
+|![terminal.test.unit](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/terminal.test.unit.png)|
+
+| npm run test:e2e |
+| ------------- | 
+|![terminal.test.e2e](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/terminal.test.e2e.png)|
 
 
 ## Overview
