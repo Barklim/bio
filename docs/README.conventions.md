@@ -17,4 +17,6 @@
 
 `style(shared/ui): [BIM-32] change colors default button`
 
-`chore(readme): [BIM-33] update dependecies or update readme.md`
+`test(auth): [BIB-33] refactor e2e for registration`
+
+`chore(readme): [BIM-34] update dependecies or update readme.md`
