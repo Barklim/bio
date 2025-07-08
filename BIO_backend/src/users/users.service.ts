@@ -191,4 +191,39 @@ export class UsersService {
       throw new BadRequestException('Failed to delete user');
     }
   }
+
+  // Methods for user activity management
+  async deactivateUser(id: number): Promise<User> {
+    try {
+      const user = await this.findOne(id);
+      user.isActive = false;
+      const updatedUser = await this.usersRepository.save(user);
+      
+      this.logger.log(`User deactivated successfully with ID: ${id}`);
+      return updatedUser;
+    } catch (error) {
+      if (error instanceof NotFoundException) {
+        throw error;
+      }
+      this.logger.error(`Error deactivating user with ID ${id}: ${error.message}`, error.stack);
+      throw new BadRequestException('Failed to deactivate user');
+    }
+  }
+
+  async activateUser(id: number): Promise<User> {
+    try {
+      const user = await this.findOne(id);
+      user.isActive = true;
+      const updatedUser = await this.usersRepository.save(user);
+      
+      this.logger.log(`User activated successfully with ID: ${id}`);
+      return updatedUser;
+    } catch (error) {
+      if (error instanceof NotFoundException) {
+        throw error;
+      }
+      this.logger.error(`Error activating user with ID ${id}: ${error.message}`, error.stack);
+      throw new BadRequestException('Failed to activate user');
+    }
+  }
 } 

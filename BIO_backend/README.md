@@ -1,12 +1,47 @@
 # BIO Backend API
 
-Rest API backend on NestJS with TypeScript, PostgreSQL and Docker configuration.
+<!-- Badges Section -->
+![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)
+![NestJS](https://img.shields.io/badge/NestJS-10.x-red.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue.svg)
+![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)
+![License](https://img.shields.io/badge/License-UNLICENSED-lightgrey.svg)
 
-## Requirements
+![Test Coverage](https://img.shields.io/codecov/c/github/Barklim/bio)
+![Code Quality](https://img.shields.io/codeclimate/maintainability/Barklim/bio)
+![Dependencies](https://img.shields.io/david/Barklim/bio)
+![Version](https://img.shields.io/github/package-json/v/Barklim/bio)
+![Issues](https://img.shields.io/github/issues/Barklim/bio)
+![Pull Requests](https://img.shields.io/github/issues-pr/Barklim/bio)
+![Last Commit](https://img.shields.io/github/last-commit/Barklim/bio)
 
-- Node.js 18+
-- Docker и Docker Compose
-- PostgreSQL (if running locally)
+Modern NestJS Backend API with PostgreSQL, JWT Authentication, and comprehensive testing
+
+## Features
+
+- **JWT Authentication** - Secure user registration and login
+- **User Management** - Complete CRUD operations with soft delete
+- **PostgreSQL Database** - Robust data storage with TypeORM
+- **Docker Support** - Easy deployment and development
+- **Swagger Documentation** - Interactive API documentation
+- **Comprehensive Testing** - Unit, Integration, and E2E tests
+- **Input Validation** - Strong data validation with class-validator
+- **Logging** - Structured logging for debugging and monitoring
+- **CORS Support** - Cross-origin resource sharing configured
+- **Hot Reload** - Fast development with automatic reloading
+
+## Tech Stack
+
+- **Framework**: NestJS 10.x
+- **Language**: TypeScript 5.x
+- **Database**: PostgreSQL 15+
+- **ORM**: TypeORM
+- **Authentication**: JWT + Passport
+- **Validation**: class-validator, class-transformer
+- **Documentation**: Swagger/OpenAPI
+- **Testing**: Jest, SuperTest
+- **Containerization**: Docker & Docker Compose
 
 ## Installation and launch
 
