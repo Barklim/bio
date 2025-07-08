@@ -8,8 +8,8 @@ COPY package*.json ./
 # Install dependencies
 RUN npm ci
 
-# Copy source code
-COPY . .
+# Don't copy source code - it will be mounted as volume
+# This allows hot reload to work properly
 
 # Expose port and debug port
 EXPOSE 3000 9229

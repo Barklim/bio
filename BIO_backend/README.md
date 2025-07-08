@@ -29,19 +29,19 @@ cp env.template .env
 #### Production mode
 ```bash
 # Start all services (API + PostgreSQL + pgAdmin)
-docker-compose up -d
+docker compose up -d
 
 # Просмотр логов
-docker-compose logs -f
+docker compose logs -f
 ```
 
 #### Development mode
 ```bash
 # Run in development mode with hot reload
-docker-compose -f docker-compose.dev.yml up -d
+docker compose -f docker-compose.dev.yml up -d
 
 # View logs
-docker-compose -f docker-compose.dev.yml logs -f api
+docker compose -f docker-compose.dev.yml logs -f api
 ```
 
 ### Local Run (without Docker)
