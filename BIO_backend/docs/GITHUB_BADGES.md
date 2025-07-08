@@ -1,8 +1,8 @@
-# GitHub Badges для BIO Backend
+# GitHub Badges for BIO Backend
 
 Full list of recommended badges for NestJS project with their code and description.
 
-## 🎯 Main badges
+## Main badges
 
 ### Technologies and versions
 ```markdown
@@ -32,7 +32,7 @@ Full list of recommended badges for NestJS project with their code and descripti
 ![Stars](https://img.shields.io/github/stars/Barklim/BIO_backend)
 ```
 
-## 🔧 CI/CD and automation
+## CI/CD and automation
 
 ### GitHub Actions
 ```markdown
@@ -66,7 +66,7 @@ Full list of recommended badges for NestJS project with their code and descripti
 ![SonarQube Coverage](https://img.shields.io/sonar/coverage/your-project-key)
 ```
 
-## 🏷️ Versioning and releases
+## Versioning and releases
 
 ### Releases
 ```markdown
@@ -81,7 +81,7 @@ Full list of recommended badges for NestJS project with their code and descripti
 ![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)
 ```
 
-## 📦 Packages and Deployment
+## Packages and Deployment
 
 ### NPM
 ```markdown
@@ -182,7 +182,7 @@ Some badges are updated automatically based on:
 - GitHub API (issues, PRs, commits)
 - CI/CD results
 
-## 💡 Recommendations
+## Recommendations
 
 ### Minimum set for a production project:
 1. **Technologies**: Node.js, NestJS, TypeScript, PostgreSQL

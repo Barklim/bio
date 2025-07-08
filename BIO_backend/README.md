@@ -1,16 +1,17 @@
 # BIO Backend API
 
-<!-- Badges Section -->
+<!-- Badges Section 
 ![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)
 ![NestJS](https://img.shields.io/badge/NestJS-10.x-red.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue.svg)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)
+-->
 
-![Test Coverage](https://img.shields.io/codecov/c/github/Barklim/bio/BIO_backend)
+<!-- ![Test Coverage](https://img.shields.io/codecov/c/github/Barklim/bio/BIO_backend) -->
 ![Issues](https://img.shields.io/github/issues/Barklim/bio/BIO_backend)
 ![Pull Requests](https://img.shields.io/github/issues-pr/Barklim/bio/BIO_backend)
-![Last Commit](https://img.shields.io/github/last-commit/Barklim/bio/BIO_backend)
+![Last Commit](https://img.shields.io/github/last-commit/Barklim/bio)
 
 Modern NestJS Backend API with PostgreSQL, JWT Authentication, and comprehensive testing
 
