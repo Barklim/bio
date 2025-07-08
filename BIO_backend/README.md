@@ -8,9 +8,6 @@
 ![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)
 
 ![Test Coverage](https://img.shields.io/codecov/c/github/Barklim/bio/BIO_backend)
-![Code Quality](https://img.shields.io/codeclimate/maintainability/Barklim/bio/BIO_backend)
-![Dependencies](https://img.shields.io/david/Barklim/bio/BIO_backend)
-![Version](https://img.shields.io/github/package-json/v/Barklim/bio/BIO_backend)
 ![Issues](https://img.shields.io/github/issues/Barklim/bio/BIO_backend)
 ![Pull Requests](https://img.shields.io/github/issues-pr/Barklim/bio/BIO_backend)
 ![Last Commit](https://img.shields.io/github/last-commit/Barklim/bio/BIO_backend)
@@ -29,18 +26,6 @@ Modern NestJS Backend API with PostgreSQL, JWT Authentication, and comprehensive
 - **Logging** - Structured logging for debugging and monitoring
 - **CORS Support** - Cross-origin resource sharing configured
 - **Hot Reload** - Fast development with automatic reloading
-
-## Tech Stack
-
-- **Framework**: NestJS 10.x
-- **Language**: TypeScript 5.x
-- **Database**: PostgreSQL 15+
-- **ORM**: TypeORM
-- **Authentication**: JWT + Passport
-- **Validation**: class-validator, class-transformer
-- **Documentation**: Swagger/OpenAPI
-- **Testing**: Jest, SuperTest
-- **Containerization**: Docker & Docker Compose
 
 ## Installation and launch
 
@@ -169,3 +154,15 @@ src/
 1. Make sure Docker is running
 2. Check free ports (3000, 5432, 5050)
 3. Clear Docker cache: `docker system prune`
+
+## Tech Stack
+
+- **Framework**: NestJS 10.x
+- **Language**: TypeScript 5.x
+- **Database**: PostgreSQL 15+
+- **ORM**: TypeORM
+- **Authentication**: JWT + Passport
+- **Validation**: class-validator, class-transformer
+- **Documentation**: Swagger/OpenAPI
+- **Testing**: Jest, SuperTest
+- **Containerization**: Docker & Docker Compose
