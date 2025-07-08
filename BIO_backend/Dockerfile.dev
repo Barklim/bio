@@ -2,14 +2,19 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy package files
+# Copy package files and configuration files
 COPY package*.json ./
+COPY tsconfig*.json ./
+COPY nest-cli.json ./
 
 # Install dependencies
 RUN npm ci
 
-# Don't copy source code - it will be mounted as volume
-# This allows hot reload to work properly
+# Copy source code for initial setup (will be overridden by volume mount)
+COPY src ./src
+
+# Don't copy all source code - most will be mounted as volume
+# This allows hot reload to work properly while ensuring config files exist
 
 # Expose port and debug port
 EXPOSE 3000 9229

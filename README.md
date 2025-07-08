@@ -22,6 +22,10 @@ cd BIO_backend
 
 cp env.template .env
 
+# Start all services (API + PostgreSQL + pgAdmin)
+docker compose up -d
+
+# Run in development mode with hot reload
 docker compose -f docker-compose.dev.yml up -d
 
 npm run db:setup
