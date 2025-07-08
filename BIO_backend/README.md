@@ -6,15 +6,14 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue.svg)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue.svg)
-![License](https://img.shields.io/badge/License-UNLICENSED-lightgrey.svg)
 
-![Test Coverage](https://img.shields.io/codecov/c/github/Barklim/bio)
-![Code Quality](https://img.shields.io/codeclimate/maintainability/Barklim/bio)
-![Dependencies](https://img.shields.io/david/Barklim/bio)
-![Version](https://img.shields.io/github/package-json/v/Barklim/bio)
-![Issues](https://img.shields.io/github/issues/Barklim/bio)
-![Pull Requests](https://img.shields.io/github/issues-pr/Barklim/bio)
-![Last Commit](https://img.shields.io/github/last-commit/Barklim/bio)
+![Test Coverage](https://img.shields.io/codecov/c/github/Barklim/bio/BIO_backend)
+![Code Quality](https://img.shields.io/codeclimate/maintainability/Barklim/bio/BIO_backend)
+![Dependencies](https://img.shields.io/david/Barklim/bio/BIO_backend)
+![Version](https://img.shields.io/github/package-json/v/Barklim/bio/BIO_backend)
+![Issues](https://img.shields.io/github/issues/Barklim/bio/BIO_backend)
+![Pull Requests](https://img.shields.io/github/issues-pr/Barklim/bio/BIO_backend)
+![Last Commit](https://img.shields.io/github/last-commit/Barklim/bio/BIO_backend)
 
 Modern NestJS Backend API with PostgreSQL, JWT Authentication, and comprehensive testing
 
