@@ -11,12 +11,12 @@ Simple MVP based on [Nest](https://nestjs.com/) and [React Native + Expo](https:
 - [Commit conventions](https://github.com/Barklim/bio/blob/main/docs/README.conventions.md)
 - [Docker commands](https://github.com/Barklim/bio/blob/main/docs/README.docker.md)
 - [Backend tests](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/Readme.TESTING.md)
-- [Backend db management](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/DATABASE_MANAGMENT_IN_SHORT.md.md)
+- [Backend db management](https://github.com/Barklim/bio/blob/main/BIO_backend/docs/DATABASE_MANAGMENT_IN_SHORT.md)
 
 ### Quick start
 
 ```bash
-git clone https://github.com/Barklim/bio/tree/main
+git clone https://github.com/Barklim/bio.git
 
 cd BIO_backend
 
