@@ -121,38 +121,8 @@ src/
 | `DB_PASSWORD` | DB password | `postgres` |
 | `DB_NAME` | Database name | `bio_db` |
 | `CORS_ORIGIN` | CORS settings | `*` |
-
-## API Request Examples
-
-### Create a user
-```bash
-curl -X POST http://localhost:3000/api/v1/users \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email": "user@example.com",
-    "firstName": "John",
-    "lastName": "Doe"
-  }'
-```
-
-### Get all users
-```bash
-curl http://localhost:3000/api/v1/users
-```
-
-### Getting user by ID
-```bash
-curl http://localhost:3000/api/v1/users/1
-```
-
-API endpoints:
-- `GET /api/v1` - Health check
-- `GET /api/v1/version` - Application version
-- `GET /api/v1/users` - List of users
-- `POST /api/v1/users` - Create user
-- `GET /api/v1/users/:id` - Get user
-- `PATCH /api/v1/users/:id` - Update user
-- `DELETE /api/v1/users/:id` - Delete user
+| `JWT_SECRET` | JWT secret key | `super-secret-jwt-key-change-in-production` |
+| `JWT_EXPIRES_IN` | JWT token expiration | `1h` |
 
 ## Troubleshooting
 

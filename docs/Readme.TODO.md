@@ -2,5 +2,12 @@
 
 - ✅ Init project
 - ⌛ Swagger descriptions
-- Refresh token, 2fa
+- Zod for validations
+- Pagination
 - `/assets` - screens, apk, Postman export
+
+### Plans for the future
+
+- Roles Guard
+- Extract api to npm for Bff 🤔
+- Refresh token, 2fa

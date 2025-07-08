@@ -38,6 +38,8 @@ services:
       DB_PASSWORD: postgres
       DB_NAME: bio_db
       CORS_ORIGIN: "*"
+      JWT_SECRET: super-secret-jwt-key-change-in-production
+      JWT_EXPIRES_IN: 1h
     ports:
       - "3000:3000"
       - "9229:9229"  # Debug port

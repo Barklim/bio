@@ -5,7 +5,8 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty, ApiHideProperty } from '@nestjs/swagger';
+import { Exclude } from 'class-transformer';
 
 @Entity('users')
 export class User {
@@ -24,6 +25,11 @@ export class User {
   @ApiProperty({ description: 'User last name', example: 'Doe' })
   @Column()
   lastName: string;
+
+  @ApiHideProperty()
+  @Exclude()
+  @Column({ nullable: true })
+  password: string;
 
   @ApiProperty({ description: 'User status', example: true })
   @Column({ default: true })
