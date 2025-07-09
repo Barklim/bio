@@ -7,7 +7,7 @@
 - ✅ Tests
 - ⌛ Ci/CD github.yaml
 
-#### Plans for the future
+#### Todo
 
 - Roles Guard
 - Extract api to npm for Bff 🤔
@@ -31,6 +31,8 @@ interface PaginatedResponse<T> {
 
 ### BIO_mobile
 
+#### Done
+
 - Install additional dependencies (React Query, AsyncStorage)
 - Configure environment variables for API
 - Create project structure according to FSD principles
@@ -44,8 +46,9 @@ interface PaginatedResponse<T> {
 - Zod for validations
 - ⌛ Zod for envs
 
-#### Plans for the future
+#### Todo
 
+- Еrror handling from backend
 - Update packages which one alerting in Metro Bundler
 - Theme Provider, Composed provider for flat providers
 - Splash screen
