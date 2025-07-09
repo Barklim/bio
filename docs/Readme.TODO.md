@@ -46,6 +46,7 @@ interface PaginatedResponse<T> {
 
 #### Plans for the future
 
+- Update packages which one alerting in Metro Bundler
 - Theme Provider, Composed provider for flat providers
 - Splash screen
 - Configure steiger for FSD 🤔

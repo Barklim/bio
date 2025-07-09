@@ -3,14 +3,18 @@ import { API_ENDPOINTS } from "../config/api";
 import { AuthResponse, LoginDto, RegisterDto } from "../types";
 
 export class AuthService {
-  async login(data: LoginDto): Promise<AuthResponse> {
+    async login(data: LoginDto): Promise<AuthResponse> {
+    console.log('Attempting to login with:', { email: data.email });
+    
     const response = await apiClient.post<AuthResponse>(
       API_ENDPOINTS.auth.login,
       data
     );
-
+    
+    console.log('Login successful, saving token...');
     await apiClient.setAuthToken(response.accessToken);
-
+    
+    console.log('Token saved successfully');
     return response;
   }
 

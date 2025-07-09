@@ -1,3 +1,4 @@
 export * from './apiClient';
 export * from './authService';
-export * from './userService'; 
+export * from './userService';
+export * from './storageService'; 

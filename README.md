@@ -43,7 +43,10 @@ npm run db:setup
 - **TypeScript** - typed JavaScript
 - **FSD** - is an architectural methodology for scaffolding front-end applications
 - **Tanstack query** - asynchronous state management
+- **Async Storage** - persistent token storage
 - **React Navigation** - Routing and navigation for React Native and Web apps
+- **Zod** - TypeScript-first schema validation with static type inference
+
 
 <div align="center">
 
@@ -52,7 +55,9 @@ npm run db:setup
 [<img title="typescript" alt="typescript" height=48 src="https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/ts.png"/>](https://www.typescriptlang.org/)
 [<img title="fsd" alt="fsd" height=48 src="https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/fsd.png"/>](https://feature-sliced.design/docs/get-started/overview)
 [<img title="tanstack query" alt="tanstack query" height=48 src="https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/query.jpeg"/>](https://tanstack.com/query/latest)
+[<img title="async storage" alt="async storage" height=48 src="https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/asyncStorage.png"/>](https://github.com/react-native-async-storage/async-storage)
 [<img title="react navigation" alt="react navigation" height=48 src="https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/reactnavigation.png"/>](https://reactnavigation.org/)
+[<img title="zod" alt="zod" height=48 src="https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/zod.svg"/>](https://github.com/colinhacks/zod)
 </div>
 
 ## Backend stack

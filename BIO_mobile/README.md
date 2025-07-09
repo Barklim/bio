@@ -116,7 +116,7 @@ timeout: 10000,
 
 ## Security
 
-- **JWT tokens** are stored in Expo Secure Store
+- **JWT tokens** are stored in AsyncStorage (cross-platform)
 - **Automatically add tokens** to all secure requests
 - **Request timeouts** to prevent hangs
 - **Form validation** using Zod schemas
@@ -186,7 +186,7 @@ eas build --platform all
 - **React Context API** - global authentication state
 - **React Hook Form + Zod** - working with forms and validation
 - **TypeScript** - typing
-- **Expo Secure Store** - secure token storage
+- **AsyncStorage** - persistent token storage (cross-platform)
 
 ### Architecture:
 - **Feature-Sliced ​​Design (FSD)** - architectural methodology

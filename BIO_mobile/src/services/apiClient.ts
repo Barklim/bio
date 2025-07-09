@@ -1,6 +1,6 @@
-import * as SecureStore from 'expo-secure-store';
 import { API_CONFIG } from '../config/api';
 import { ApiError } from '../types';
+import { storageService } from './storageService';
 
 const TOKEN_KEY = 'auth_token';
 
@@ -15,7 +15,7 @@ class ApiClient {
 
   public async getAuthToken(): Promise<string | null> {
     try {
-      return await SecureStore.getItemAsync(TOKEN_KEY);
+      return await storageService.getItem(TOKEN_KEY);
     } catch {
       return null;
     }
@@ -23,7 +23,7 @@ class ApiClient {
 
   public async setAuthToken(token: string): Promise<void> {
     try {
-      await SecureStore.setItemAsync(TOKEN_KEY, token);
+      await storageService.setItem(TOKEN_KEY, token);
     } catch (error) {
       console.error('Error saving auth token:', error);
     }
@@ -31,7 +31,7 @@ class ApiClient {
 
   public async removeAuthToken(): Promise<void> {
     try {
-      await SecureStore.deleteItemAsync(TOKEN_KEY);
+      await storageService.removeItem(TOKEN_KEY);
     } catch (error) {
       console.error('Error removing auth token:', error);
     }
@@ -50,6 +50,9 @@ class ApiClient {
 
     if (token) {
       headers.Authorization = `Bearer ${token}`;
+      console.log('Request with token to:', endpoint);
+    } else {
+      console.log('Request without token to:', endpoint);
     }
 
     const controller = new AbortController();
