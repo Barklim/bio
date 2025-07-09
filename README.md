@@ -38,7 +38,7 @@ npm run db:setup
 
 | Login | Register | Users | User |
 | ------------- | ----------------- | ----------------- | ----------------- |
-|![login](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen1.png)|![register](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen1.png)|![users](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen3.png)|![user](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen4.png)|
+|![login](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen1.png)|![register](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen2.png)|![users](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen3.png)|![user](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen4.png)|
 
 ## React Native stack
 
