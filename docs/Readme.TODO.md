@@ -31,5 +31,21 @@ interface PaginatedResponse<T> {
 
 ### BIO_mobile
 
-- ⌛ Add Rect Query
-- ⌛ Zod for validations
+- Install additional dependencies (React Query, AsyncStorage)
+- Configure environment variables for API
+- Create project structure according to FSD principles
+- Create TypeScript types for API
+- Implement API services
+- Create Context for authentication
+- Create reusable UI components
+- Create registration and authorization screens
+- Create a user list screen
+- Configure navigation with protected routes
+- Zod for validations
+- ⌛ Zod for envs
+
+#### Plans for the future
+
+- Theme Provider, Composed provider for flat providers
+- Splash screen
+- Configure steiger for FSD 🤔
