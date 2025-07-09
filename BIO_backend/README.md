@@ -108,7 +108,7 @@ npm run lint               # Code check
 npm run format             # Code formatting
 ```
 
-## 📁 Project structure
+## Project structure
 
 ```
 src/
