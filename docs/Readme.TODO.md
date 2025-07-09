@@ -48,6 +48,7 @@ interface PaginatedResponse<T> {
 
 #### Todo
 
+- Fix java version and node issue on Android
 - Еrror handling from backend
 - Update packages which one alerting in Metro Bundler
 - Theme Provider, Composed provider for flat providers

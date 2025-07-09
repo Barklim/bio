@@ -36,6 +36,10 @@ npm run db:setup
 - Postman [collection](https://github.com/Barklim/bio/blob/main/assets/_Biocad.postman_collection.json)
 - [Readme.api.md](https://github.com/Barklim/bio/blob/main/docs/Readme.api.md)
 
+| Login | Register | Users | User |
+| ------------- | ----------------- | ----------------- | ----------------- |
+|![login](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen1.png)|![register](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen1.png)|![users](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen3.png)|![user](https://raw.githubusercontent.com/Barklim/bio/refs/heads/main/assets/screen4.png)|
+
 ## React Native stack
 
 - **React Native** - is an UI software framework
